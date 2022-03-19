@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>簡易テキスト読み上げくん</title>
+</head>
+
+<body>
+  <div class="flex flex-col h-screen justify-center items-center">
+    <div class="flex justify-center items-center flex-col max-w-none md:prose-lg prose-sm flex-1">
+      <h1>簡易テキスト読み上げくん</h1>
+      <form id="textForm" class="flex justify-center w-screen">
+        <input type="text" placeholder="喋らせる文字" class="input input-bordered input-primary w-2/3 input-lg" required
+          id="text" autofocus>
+        <input type="submit" class="btn btn-primary btn-lg" value="再生" title="入力した語句を読み上げます。">
+      </form>
+    </div>
+    <div class="py-3">
+      <p>&copy; 2022 Frog</p>
+    </div>
+  </div>
+
+  <!-- Put this part before </body> tag -->
+  <input type="checkbox" id="unavailable" class="modal-toggle">
+  <label for="unavailable" class="modal cursor-pointer">
+    <label class="modal-box relative" for="">
+      <label for="unavailable" class="btn btn-sm btn-circle absolute right-2 top-2" title="閉じる">✕</label>
+      <h3 class="text-lg font-bold">お使いのブラウザは非対応です。</h3>
+      <p class="pt-4 pb-1">お使いのブラウザはこのアプリに対応していません。</p>
+      <p class="pt-1 pb-4">最新の Chrome、Safari、Firefox からアクセスし直してください。</p>
+    </label>
+  </label>
+</body>
+
+</html>
