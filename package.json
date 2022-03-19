@@ -1,5 +1,5 @@
 {
-  "name": "speak-text",
+  "name": "read-text",
   "version": "0.0.1",
   "description": "入力した文字を喋らせることができる簡易アプリです",
   "main": "index.js",
@@ -9,12 +9,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "deploy": "yarn run build && gh-pages -d dist"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.2",
     "autoprefixer": "^10.4.4",
     "css-loader": "^6.7.1",
+    "gh-pages": "^3.2.3",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",
