@@ -9,10 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const text = document.getElementById('text');
 
   form.addEventListener('submit', (e) => {
+    if (!text.value) return;
     e.preventDefault();
     const uttr = new SpeechSynthesisUtterance(text.value);
-    speechSynthesis.cancel();
     speechSynthesis.speak(uttr);
     text.value = null;
+    text.focus();
   })
 })

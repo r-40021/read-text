@@ -1,7 +1,7 @@
 {
   "name": "read-text",
-  "version": "0.0.1",
-  "description": "入力した文字を喋らせることができる簡易アプリです",
+  "version": "1.0.0",
+  "description": "入力した文字を喋らせることができる簡易アプリ",
   "main": "index.js",
   "author": "Frog",
   "license": "MIT",
